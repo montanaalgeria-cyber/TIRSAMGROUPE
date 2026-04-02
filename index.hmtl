@@ -1,1 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirsam Groupe | Poids lourds & Bus</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: #f4f4f4;
+            color: #1e1e2a;
+        }
+        .container {
+            max-width: 1300px;
+            margin: auto;
+            padding: 20px;
+        }
+        .navbar {
+            background: #0a2b3e;
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .logo span {
+            color: #f39c12;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            color: #f39c12;
+        }
+        .hero {
+            background: linear-gradient(135deg, #0f2c39, #1b4f6e);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            background: #f39c12;
+            color: #1e1e2a;
+            padding: 12px 30px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #e67e22;
+            transform: scale(1.02);
+        }
+        .category-title {
+            font-size: 1.8rem;
+            margin: 40px 0 20px;
+            border-right: 5px solid #f39c12;
+            padding-right: 15px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+        }
+        .card-img {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            background: #eef2f5;
+        }
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+        .card:hover .card-img img {
+            transform: scale(1.03);
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card-content h3 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+        .specs {
+            color: #2c3e50;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+        .price {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #e67e22;
+            margin: 15px 0;
+        }
+        .btn-small {
+            background: #0a2b3e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .btn-small:hover {
+            background: #f39c12;
+            color: #1e1e2a;
+        }
+        footer {
+            background: #0a2b3e;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+        @media (max-width: 768px) {
+            .navbar .container {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Tirsam <span>Groupe</span></div>
+            <div class="nav-links">
+                <a href="#camions">Camions SITRAK</a>
+                <a href="#bus51">Bus 51 places</a>
+                <a href="#bus100">Bus 100 places</a>
+                <a href="formulaire.html" class="btn-small" style="background:#f39c12; color:#1e1e2a;">Demande info</a>
+            </div>
+        </div>
+    </nav>
 
+    <div class="hero">
+        <div class="container">
+            <h1>Fabrication & assemblage de véhicules industriels</h1>
+            <p>Camions SITRAK • Bus 51 & 100 places • Fiabilité allemande (MAN)</p>
+            <a href="formulaire.html" class="btn">Obtenir un devis</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="camions">
+            <div class="category-title">🚛 Camions SITRAK (Moteurs MAN)</div>
+            <div class="product-grid">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://placehold.co/600x400/0a2b3e/white?text=SITRAK+4x2" alt="SITRAK 4x2">
+                    </div>
+                    <div class="card-content">
+                        <h3>SITRAK 4×2</h3>
+                        <div class="specs">• Porteur / Tracteur<br>• Moteur 320 ch • Boîte ZF</div>
+                        <div class="price">À partir de 9 800 000 DA</div>
+                        <a href="formulaire.html?modele=SITRAK%204x2" class="btn-small">Demander un prix</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://placehold.co/600x400/1b4f6e/white?text=SITRAK+6x4" alt="SITRAK 6x4">
+                    </div>
+                    <div class="card-content">
+                        <h3>SITRAK 6×4</h3>
+                        <div class="specs">• 3 essieux • 400 ch<br>• Idéal pour chantiers et mines</div>
+                        <div class="price">À partir de 12 500 000 DA</div>
+                        <a href="formulaire.html?modele=SITRAK%206x4" class="btn-small">Demander un prix</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://placehold.co/600x400/2c3e50/white?text=SITRAK+8x4" alt="SITRAK 8x4">
+                    </div>
+                    <div class="card-content">
+                        <h3>SITRAK 8×4</h3>
+                        <div class="specs">• 4 essieux • Benne / Bétonnière<br>• Puissance 460 ch</div>
+                        <div class="price">À partir de 16 200 000 DA</div>
+                        <a href="formulaire.html?modele=SITRAK%208x4" class="btn-small">Demander un prix</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="bus51">
+            <div class="category-title">🚌 Bus 51 places (TS11)</div>
+            <div class="product-grid">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://placehold.co/600x400/2ecc71/white?text=Bus+51+places" alt="Bus 51 places">
+                    </div>
+                    <div class="card-content">
+                        <h3>Bus 51 voyageurs</h3>
+                        <div class="specs">• Climatisation • Confort Européen<br>• Distribution ETUSA, Sétram, etc.</div>
+                        <div class="price">13 500 000 DA</div>
+                        <a href="formulaire.html?modele=Bus%2051%20places%20(13.5M)" class="btn-small">Demander un prix</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="bus100">
+            <div class="category-title">🚍 Bus 100 places (Haut standing)</div>
+            <div class="product-grid">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://placehold.co/600x400/3498db/white?text=Bus+100+places" alt="Bus 100 places">
+                    </div>
+                    <div class="card-content">
+                        <h3>Bus 100 voyageurs</h3>
+                        <div class="specs">• Électrique ou Diesel • Normes Euro 6<br>• Livraison possible sous 6 mois</div>
+                        <div class="price">Sur devis (à partir de 22 000 000 DA)</div>
+                        <a href="formulaire.html?modele=Bus%20100%20places" class="btn-small">Demander un prix</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Tirsam Groupe - Tous droits réservés | Siège : Batna, Zone industrielle Kechida | <a href="formulaire.html" style="color:#f39c12;">Contact commercial</a></p>
+    </footer>
+</body>
+</html>
